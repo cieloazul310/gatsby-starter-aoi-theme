@@ -5,9 +5,7 @@ import Layout from 'gatsby-theme-typescript-material-ui/src/layout';
 function SecondPage() {
   return (
     <Layout title="Second Page">
-      <Typography variant="h2">
-        Second Page
-      </Typography>
+      <Typography variant="h2">Second Page</Typography>
     </Layout>
   );
 }

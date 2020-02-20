@@ -1,4 +1,4 @@
-const myTheme = require('./src/utils/theme').default;
+//const myTheme = require('./src/utils/theme').default;
 
 module.exports = {
   siteMetadata: {
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-typescript-material-ui`,
       options: {
-        theme: myTheme
+        //theme: myTheme
       }
     },
     `gatsby-plugin-graphql-codegen`,

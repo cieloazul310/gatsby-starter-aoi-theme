@@ -1542,101 +1542,13 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
-  theme?: Maybe<SitePluginPluginOptionsTheme>,
   path?: Maybe<Scalars['String']>,
   pathCheck?: Maybe<Scalars['Boolean']>,
 };
 
 export type SitePluginPluginOptionsFilterInput = {
-  theme?: Maybe<SitePluginPluginOptionsThemeFilterInput>,
   path?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
-};
-
-export type SitePluginPluginOptionsTheme = {
-  palette?: Maybe<SitePluginPluginOptionsThemePalette>,
-};
-
-export type SitePluginPluginOptionsThemeFilterInput = {
-  palette?: Maybe<SitePluginPluginOptionsThemePaletteFilterInput>,
-};
-
-export type SitePluginPluginOptionsThemePalette = {
-  primary?: Maybe<SitePluginPluginOptionsThemePalettePrimary>,
-  secondary?: Maybe<SitePluginPluginOptionsThemePaletteSecondary>,
-};
-
-export type SitePluginPluginOptionsThemePaletteFilterInput = {
-  primary?: Maybe<SitePluginPluginOptionsThemePalettePrimaryFilterInput>,
-  secondary?: Maybe<SitePluginPluginOptionsThemePaletteSecondaryFilterInput>,
-};
-
-export type SitePluginPluginOptionsThemePalettePrimary = {
-  _50?: Maybe<Scalars['String']>,
-  _100?: Maybe<Scalars['String']>,
-  _200?: Maybe<Scalars['String']>,
-  _300?: Maybe<Scalars['String']>,
-  _400?: Maybe<Scalars['String']>,
-  _500?: Maybe<Scalars['String']>,
-  _600?: Maybe<Scalars['String']>,
-  _700?: Maybe<Scalars['String']>,
-  _800?: Maybe<Scalars['String']>,
-  _900?: Maybe<Scalars['String']>,
-  A100?: Maybe<Scalars['String']>,
-  A200?: Maybe<Scalars['String']>,
-  A400?: Maybe<Scalars['String']>,
-  A700?: Maybe<Scalars['String']>,
-};
-
-export type SitePluginPluginOptionsThemePalettePrimaryFilterInput = {
-  _50?: Maybe<StringQueryOperatorInput>,
-  _100?: Maybe<StringQueryOperatorInput>,
-  _200?: Maybe<StringQueryOperatorInput>,
-  _300?: Maybe<StringQueryOperatorInput>,
-  _400?: Maybe<StringQueryOperatorInput>,
-  _500?: Maybe<StringQueryOperatorInput>,
-  _600?: Maybe<StringQueryOperatorInput>,
-  _700?: Maybe<StringQueryOperatorInput>,
-  _800?: Maybe<StringQueryOperatorInput>,
-  _900?: Maybe<StringQueryOperatorInput>,
-  A100?: Maybe<StringQueryOperatorInput>,
-  A200?: Maybe<StringQueryOperatorInput>,
-  A400?: Maybe<StringQueryOperatorInput>,
-  A700?: Maybe<StringQueryOperatorInput>,
-};
-
-export type SitePluginPluginOptionsThemePaletteSecondary = {
-  _50?: Maybe<Scalars['String']>,
-  _100?: Maybe<Scalars['String']>,
-  _200?: Maybe<Scalars['String']>,
-  _300?: Maybe<Scalars['String']>,
-  _400?: Maybe<Scalars['String']>,
-  _500?: Maybe<Scalars['String']>,
-  _600?: Maybe<Scalars['String']>,
-  _700?: Maybe<Scalars['String']>,
-  _800?: Maybe<Scalars['String']>,
-  _900?: Maybe<Scalars['String']>,
-  A100?: Maybe<Scalars['String']>,
-  A200?: Maybe<Scalars['String']>,
-  A400?: Maybe<Scalars['String']>,
-  A700?: Maybe<Scalars['String']>,
-};
-
-export type SitePluginPluginOptionsThemePaletteSecondaryFilterInput = {
-  _50?: Maybe<StringQueryOperatorInput>,
-  _100?: Maybe<StringQueryOperatorInput>,
-  _200?: Maybe<StringQueryOperatorInput>,
-  _300?: Maybe<StringQueryOperatorInput>,
-  _400?: Maybe<StringQueryOperatorInput>,
-  _500?: Maybe<StringQueryOperatorInput>,
-  _600?: Maybe<StringQueryOperatorInput>,
-  _700?: Maybe<StringQueryOperatorInput>,
-  _800?: Maybe<StringQueryOperatorInput>,
-  _900?: Maybe<StringQueryOperatorInput>,
-  A100?: Maybe<StringQueryOperatorInput>,
-  A200?: Maybe<StringQueryOperatorInput>,
-  A400?: Maybe<StringQueryOperatorInput>,
-  A700?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SitePluginSortInput = {
