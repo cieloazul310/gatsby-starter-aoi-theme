@@ -5,8 +5,9 @@ module.exports = {
     title: `Gatsby Starter Typescript App Shell`,
     description: 'A GatsbyJS starter using Material Design written with TypeScript.',
     lang: 'ja',
-    siteUrl: 'https://cieloazul310.github.io/gatsby-starter-typescript-material-ui/',
+    siteUrl: 'https://cieloazul310.github.io/gatsby-starter-typescript-material-ui-theme/',
     author: 'cieloazul310',
+    keywords: ['Gatsby', 'TypeScript', 'Material-UI'],
     social: {
       mail: 'mail@cieloazul310.com',
       twitter: 'hollyhock_staff',
@@ -22,7 +23,7 @@ module.exports = {
       youtube: 'hollytube0310'
     }
   },
-  pathPrefix: '/gatsby-starter-typescript-material-ui',
+  pathPrefix: '/gatsby-starter-typescript-material-ui-theme',
   plugins: [
     {
       resolve: `gatsby-theme-typescript-material-ui`,
