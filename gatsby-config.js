@@ -1,9 +1,8 @@
-//const myTheme = require('./src/utils/theme').default;
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Typescript App Shell`,
-    description: 'A GatsbyJS starter using Material Design written with TypeScript.',
+    title: `Gatsby Starter Aoi Theme`,
+    description: 'A GatsbyJS starter using Gatsby Aoi Theme based on Material Design written with TypeScript.',
     lang: 'ja',
     siteUrl: 'https://cieloazul310.github.io/gatsby-starter-typescript-material-ui-theme/',
     author: 'cieloazul310',
@@ -25,12 +24,7 @@ module.exports = {
   },
   pathPrefix: '/gatsby-starter-typescript-material-ui-theme',
   plugins: [
-    {
-      resolve: `gatsby-theme-typescript-material-ui`,
-      options: {
-        //theme: myTheme
-      }
-    },
+    `gatsby-theme-typescript-material-ui`,
     `gatsby-plugin-graphql-codegen`,
     // Add typescript stack into webpack
     `gatsby-plugin-typescript`

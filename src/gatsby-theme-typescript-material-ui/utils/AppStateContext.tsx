@@ -1,3 +1,4 @@
+// shadowing of `gatsby-theme-typescript-material-ui`
 import * as React from 'react';
 import { AppState, initialAppState } from './AppState';
 import { Action } from './reducer';

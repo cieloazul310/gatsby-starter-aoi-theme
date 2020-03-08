@@ -1,3 +1,4 @@
+// shadowing of `gatsby-theme-typescript-material-ui` 
 import teal from '@material-ui/core/colors/teal';
 import orange from '@material-ui/core/colors/orange';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';

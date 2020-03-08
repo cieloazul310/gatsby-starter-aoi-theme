@@ -1,35 +1,33 @@
 import * as React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-
 import Layout from 'gatsby-theme-typescript-material-ui/src/layout';
 import AppLink from 'gatsby-theme-typescript-material-ui/src/components/AppLink';
-import { useAppState, useDispatch } from '../gatsby-theme-typescript-material-ui/utils/AppStateContext';
-
+/*
 interface Props {
-  //location: LocationWithState;
 }
-
-function IndexPage(props: Props) {
-  console.log(props);
-  const state = useAppState();
-  const dispatch = useDispatch();
-  const _onIncrement = () => {
-    dispatch({ type: 'INCREMENT' });
-  }
-
+*/
+function IndexPage() {
   return (
-    <Layout title="Index Page" maxWidth="md">
-      <Typography variant="h2">Index Page</Typography>
-      <Typography variant="body1">
-        {state.count}
+    <Layout maxWidth="md">
+      <Typography variant="h2" gutterBottom>
+        Gatsby Theme Aoi Example
       </Typography>
-      <Button variant="contained" color="primary" onClick={_onIncrement}>
-        INCREMENT
-      </Button>
-      <AppLink to="/page-2/">
-        Link to Page 2
-      </AppLink>
+      <Typography variant="subtitle1" gutterBottom>
+        This is an example page using Gatsby Theme Aoi.
+      </Typography>
+      <Typography variant="h4" component="h3" gutterBottom>
+        Features
+      </Typography>
+      <Typography variant="body1" paragraph>
+        - Fast, simple and functionally material design layout.
+      </Typography>
+      <Typography variant="body1" paragraph>
+        - Using TypeScript
+      </Typography>
+      <Typography variant="body1" paragraph>
+        - Less dependencies make you use the gatsby-theme easily.
+      </Typography>
+      <AppLink to="/page-2/">Link to Page 2</AppLink>
     </Layout>
   );
 }
