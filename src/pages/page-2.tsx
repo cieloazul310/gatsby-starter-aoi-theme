@@ -3,8 +3,8 @@ import Typography from '@material-ui/core/Typography';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Button from '@material-ui/core/Button';
-import Layout from 'gatsby-theme-typescript-material-ui/src/layout/TabPageLayout';
-import TabPane from 'gatsby-theme-typescript-material-ui/src/layout/TabPane';
+import Layout from 'gatsby-theme-aoi/src/layout/TabPageLayout';
+import TabPane from 'gatsby-theme-aoi/src/layout/TabPane';
 
 function SecondPage() {
   const [tab, setTab] = React.useState(0);
@@ -13,7 +13,7 @@ function SecondPage() {
   };
   const _handleTabIndex = (index: number) => () => {
     setTab(index);
-  }
+  };
   return (
     <Layout
       title="Tab Layout"
@@ -62,7 +62,9 @@ function SecondPage() {
           Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem
           Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。
         </Typography>
-        <Button color="secondary" onClick={_handleTabIndex(0)}>Go to Tab-1</Button>
+        <Button color="secondary" onClick={_handleTabIndex(0)}>
+          Go to Tab-1
+        </Button>
       </TabPane>
     </Layout>
   );

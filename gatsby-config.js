@@ -24,7 +24,7 @@ module.exports = {
   },
   pathPrefix: '/gatsby-starter-typescript-material-ui-theme',
   plugins: [
-    `gatsby-theme-typescript-material-ui`,
+    `gatsby-theme-aoi`,
     `gatsby-plugin-graphql-codegen`,
     // Add typescript stack into webpack
     `gatsby-plugin-typescript`

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Layout from 'gatsby-theme-typescript-material-ui/src/layout';
-import AppLink from 'gatsby-theme-typescript-material-ui/src/components/AppLink';
+import Layout from 'gatsby-theme-aoi/src/layout';
+import AppLink from 'gatsby-theme-aoi/src/components/AppLink';
 /*
 interface Props {
 }

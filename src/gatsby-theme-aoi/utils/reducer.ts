@@ -1,10 +1,7 @@
 // shadowing of `gatsby-theme-typescript-material-ui`
 import { AppState } from './AppState';
 
-export type Action = 
-  { type: 'INCREMENT' } | 
-  { type: 'DECREMENT' } | 
-  { type: 'RESET_COUNT' };
+export type Action = { type: 'INCREMENT' } | { type: 'DECREMENT' } | { type: 'RESET_COUNT' };
 
 export default function reducer(state: AppState, action: Action): AppState {
   switch (action.type) {
