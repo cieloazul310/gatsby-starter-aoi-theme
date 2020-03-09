@@ -4,7 +4,7 @@ module.exports = {
     title: `Gatsby Starter Aoi Theme`,
     description: 'A GatsbyJS starter using Gatsby Aoi Theme based on Material Design written with TypeScript.',
     lang: 'ja',
-    siteUrl: 'https://cieloazul310.github.io/gatsby-starter-typescript-material-ui-theme/',
+    siteUrl: 'https://cieloazul310.github.io/gatsby-starter-aoi-theme/',
     author: 'cieloazul310',
     keywords: ['Gatsby', 'TypeScript', 'Material-UI'],
     social: {
@@ -22,7 +22,7 @@ module.exports = {
       youtube: 'hollytube0310'
     }
   },
-  pathPrefix: '/gatsby-starter-typescript-material-ui-theme',
+  pathPrefix: '/gatsby-starter-aoi-theme',
   plugins: [
     `gatsby-theme-aoi`,
     `gatsby-plugin-graphql-codegen`,
