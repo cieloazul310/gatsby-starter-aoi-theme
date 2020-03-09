@@ -31,6 +31,7 @@ function SecondPage() {
           Tab Layout Page
         </Typography>
         <Typography variant="subtitle1">Material-UI Tab Page</Typography>
+        <Typography paragraph>This Layout is very useful with react-swipeable-views.</Typography>
         <Button color="secondary" onClick={_handleTabIndex(1)}>
           Go to Tab-2
         </Button>
