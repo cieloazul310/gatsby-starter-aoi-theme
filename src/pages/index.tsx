@@ -26,9 +26,6 @@ function IndexPage() {
       <Button component={GatsbyLink} color="secondary" to="/page-2/">
         Link to Page 2
       </Button>
-      <Button component={GatsbyLink} color="secondary" to="/page-3/">
-        Link to Page 3
-      </Button>
     </Layout>
   );
 }

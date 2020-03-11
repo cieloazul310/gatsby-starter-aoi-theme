@@ -1,12 +1,11 @@
 // shadowing of `gatsby-theme-typescript-material-ui`
-import teal from '@material-ui/core/colors/teal';
-import orange from '@material-ui/core/colors/orange';
+import { blue as primary, red as secondary } from '@material-ui/core/colors/';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
-    primary: teal,
-    secondary: orange,
+    primary,
+    secondary,
   },
   typography: {
     fontFamily: [
