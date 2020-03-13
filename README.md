@@ -1,4 +1,4 @@
-# gatsby-starter-aoi-theme
+# Gatsby Starter Aoi Theme
 
 > A starter kit for TypeScript-based Gatsby projects Material-UI.
 

@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { Link as GatsbyLink } from 'gatsby';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import AppLink, { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
 import Layout from 'gatsby-theme-aoi/src/layout';
 import { useAppState } from 'gatsby-theme-aoi-top-layout/src/utils/AppStateContext';
@@ -17,7 +15,7 @@ function IndexPage() {
         This is an example page using Gatsby Theme Aoi.
       </Typography>
       <section>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h4" component="h3" gutterBottom>
           Features
         </Typography>
         <Typography component="ul" paragraph>
@@ -30,7 +28,7 @@ function IndexPage() {
         </Typography>
       </section>
       <section>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h4" component="h3" gutterBottom>
           Layouts
         </Typography>
         <Typography component="ul" paragraph>
@@ -46,9 +44,7 @@ function IndexPage() {
           </Typography>
         </Typography>
       </section>
-      <AppLinkButton to="/tab-page/">
-        Link to Page 2
-      </AppLinkButton>
+      <AppLinkButton to="/page-2/">Go to Page 2</AppLinkButton>
     </Layout>
   );
 }
