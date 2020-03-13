@@ -1403,6 +1403,8 @@ export type SitePageFieldsEnum =
   'pluginCreator___resolve' |
   'pluginCreator___name' |
   'pluginCreator___version' |
+  'pluginCreator___pluginOptions___fonts' |
+  'pluginCreator___pluginOptions___fonts___family' |
   'pluginCreator___pluginOptions___utilPath' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___pathCheck' |
@@ -1592,6 +1594,8 @@ export type SitePluginFieldsEnum =
   'resolve' |
   'name' |
   'version' |
+  'pluginOptions___fonts' |
+  'pluginOptions___fonts___family' |
   'pluginOptions___utilPath' |
   'pluginOptions___path' |
   'pluginOptions___pathCheck' |
@@ -1710,15 +1714,29 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
+  fonts?: Maybe<Array<Maybe<SitePluginPluginOptionsFonts>>>,
   utilPath?: Maybe<Scalars['String']>,
   path?: Maybe<Scalars['String']>,
   pathCheck?: Maybe<Scalars['Boolean']>,
 };
 
 export type SitePluginPluginOptionsFilterInput = {
+  fonts?: Maybe<SitePluginPluginOptionsFontsFilterListInput>,
   utilPath?: Maybe<StringQueryOperatorInput>,
   path?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
+};
+
+export type SitePluginPluginOptionsFonts = {
+  family?: Maybe<Scalars['String']>,
+};
+
+export type SitePluginPluginOptionsFontsFilterInput = {
+  family?: Maybe<StringQueryOperatorInput>,
+};
+
+export type SitePluginPluginOptionsFontsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsFontsFilterInput>,
 };
 
 export type SitePluginSortInput = {
