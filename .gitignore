@@ -13,6 +13,7 @@ src/pages/catalogue.tsx
 src/pages/tab-page.tsx
 src/pages/jumbotron.tsx
 src/pages/without-drawer.tsx
+src/pages/custom-layout.tsx
 
 src/gatsby-theme-aoi/layout/BottomNav/
 src/gatsby-theme-aoi/layout/DrawerInner/
