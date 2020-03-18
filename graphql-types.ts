@@ -1405,7 +1405,7 @@ export type SitePageFieldsEnum =
   'pluginCreator___version' |
   'pluginCreator___pluginOptions___fonts' |
   'pluginCreator___pluginOptions___fonts___family' |
-  'pluginCreator___pluginOptions___utilPath' |
+  'pluginCreator___pluginOptions___siteId' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___pathCheck' |
   'pluginCreator___nodeAPIs' |
@@ -1596,7 +1596,7 @@ export type SitePluginFieldsEnum =
   'version' |
   'pluginOptions___fonts' |
   'pluginOptions___fonts___family' |
-  'pluginOptions___utilPath' |
+  'pluginOptions___siteId' |
   'pluginOptions___path' |
   'pluginOptions___pathCheck' |
   'nodeAPIs' |
@@ -1715,14 +1715,14 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 export type SitePluginPluginOptions = {
   fonts?: Maybe<Array<Maybe<SitePluginPluginOptionsFonts>>>;
-  utilPath?: Maybe<Scalars['String']>;
+  siteId?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
   fonts?: Maybe<SitePluginPluginOptionsFontsFilterListInput>;
-  utilPath?: Maybe<StringQueryOperatorInput>;
+  siteId?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };

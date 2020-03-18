@@ -40,7 +40,7 @@ function IndexPage() {
             Jumbotron <AppLink to="/jumbotron/">Example</AppLink>
           </Typography>
           <Typography component="li">
-            Without Drawer <AppLink to="/without-drawer/">Example</AppLink>
+            Full Width <AppLink to="/without-drawer/">Example</AppLink>
           </Typography>
         </Typography>
       </section>
