@@ -3,7 +3,9 @@
 A starter kit for TypeScript-based Gatsby projects Material-UI.
 
 DEMO: <https://cieloazul310.github.io/gatsby-starter-aoi-theme/>  
-Netlify: <https://vigorous-stonebraker-65ed69.netlify.com/>
+Netlify: <https://gatsby-starter-aoi-theme.netlify.com/>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d00980b-7f66-4af3-94c9-170d715f84f4/deploy-status)](https://app.netlify.com/sites/gatsby-starter-aoi-theme/deploys)
 
 ## Features
 
