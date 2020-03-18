@@ -8,12 +8,12 @@ storybook-static
 .DS_Store
 yarn-error.log
 
-# only gh-pages
-src/pages/catalogue.tsx
-src/pages/tab-page.tsx
-src/pages/jumbotron.tsx
-src/pages/without-drawer.tsx
-src/pages/custom-layout.tsx
+# only gh-pages and netlify
+#src/pages/catalogue.tsx
+#src/pages/tab-page.tsx
+#src/pages/jumbotron.tsx
+#src/pages/without-drawer.tsx
+#src/pages/custom-layout.tsx
 
-src/gatsby-theme-aoi/layout/BottomNav/
-src/gatsby-theme-aoi/layout/DrawerInner/
+#src/gatsby-theme-aoi/layout/BottomNav/
+#src/gatsby-theme-aoi/layout/DrawerInner/
