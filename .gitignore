@@ -8,6 +8,8 @@ storybook-static
 .DS_Store
 yarn-error.log
 
+graphql-types.ts
+
 # only gh-pages and netlify
 #src/pages/catalogue.tsx
 #src/pages/tab-page.tsx
