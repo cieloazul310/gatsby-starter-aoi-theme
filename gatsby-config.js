@@ -1,4 +1,3 @@
-
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Aoi Theme`,
@@ -19,19 +18,23 @@ module.exports = {
       tumblr: 'cieloazul310',
       instagram: 'mito.hollyhock.official',
       vimeo: 'cieloazul310',
-      youtube: 'hollytube0310'
-    }
+      youtube: 'hollytube0310',
+    },
   },
   pathPrefix: '/gatsby-starter-aoi-theme',
   plugins: [
     {
       resolve: `gatsby-theme-aoi`,
       options: {
-        siteId: `gatsby-starter-aoi-theme`
-      }
+        siteId: `gatsby-starter-aoi-theme`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-eslint`,
+      options: {
+        test: /\.js$|\.jsx$|\.ts$|\.tsx$/,
+      },
     },
     `gatsby-plugin-graphql-codegen`,
-    // Add typescript stack into webpack
-    `gatsby-plugin-typescript`
-  ]
+  ],
 };

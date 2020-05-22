@@ -13,18 +13,18 @@ const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: lighten(theme.palette.primary.main, 0.4)
+      main: lighten(theme.palette.primary.main, 0.4),
     },
     secondary: {
-      main: lighten(theme.palette.secondary.main, 0.4)
-    }
-  }
+      main: lighten(theme.palette.secondary.main, 0.4),
+    },
+  },
 });
 
 addDecorator(
   withMuiTheme({
     'Default theme': theme,
-    'Dark theme': darkTheme
+    'Dark theme': darkTheme,
   })
 );
 
