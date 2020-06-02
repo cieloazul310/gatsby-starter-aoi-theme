@@ -1,8 +1,11 @@
 # Gatsby Starter Aoi Theme
 
-> A starter kit for TypeScript-based Gatsby projects Material-UI.
+A starter kit for TypeScript-based Gatsby projects Material-UI.
 
-DEMO: <https://cieloazul310.github.io/gatsby-starter-aoi-theme/>
+DEMO: <https://cieloazul310.github.io/gatsby-starter-aoi-theme/>  
+Netlify: <https://gatsby-starter-aoi-theme.netlify.com/>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d00980b-7f66-4af3-94c9-170d715f84f4/deploy-status)](https://app.netlify.com/sites/gatsby-starter-aoi-theme/deploys)
 
 ## Features
 
@@ -17,97 +20,30 @@ DEMO: <https://cieloazul310.github.io/gatsby-starter-aoi-theme/>
 
 ```sh
 gatsby new ${your_project} https://github.com/cieloazul310/gatsby-starter-aoi-theme
+cd ${your_project}
+
+# develop
+yarn run develop
+
+# build
+yarn run build
+
+# format with prettier
+yarn run format
 ```
 
-## Use Aoi-Layout
+## docs
 
-```tsx
-import Layout from 'gatsby-theme-aoi/src/layout/';
+See [gatsby-theme-aoi] repository.
 
-export default function Page() {
-  return (
-    <Layout maxWidth="md">
-      <p>Hello, Aoi!</p>
-    </Layout>
-  );
-}
-```
+## Related Repositories
 
-### Aoi Layout Structure
+- [gatsby-theme-aoi] A Gatsby Aoi Theme
+- [gatsby-theme-aoi-top-layout] A plugin for Gatsby Aoi Theme
+- [gatsby-starter-aoi] A Gatsby starter kit (deprecated)
 
-```tsx
-<Box>
-  <Header /> //fixed
-  <Drawer />
-  <Container>
-    <Box>
-      <main>{children}</main>
-      <Footer />
-    </Box>
-  </Container>
-  <Fab /> //fixed
-  <BottomNavigation /> //fixed
-</Box>
-```
-
-## Customize Themes and Layouts
-
-Gatsby Shadowing is good.
-
-```txt
-src
-├── gatsby-theme-aoi //shadowing
-│   ├── components
-│   └── layout
-├── gatsby-theme-aoi-top-layout //shadowing
-│   └── utils
-│       ├── AppState.ts
-│       ├── ThemeState.ts
-│       └── theme.ts
-└── pages
-    ├── 404.tsx
-    ├── index.tsx
-    └── page-2.tsx
-```
-
-### Set Your Theme
-
-#### ./src/gatsby-theme-aoi-top-layout/utils/theme.ts
-
-```tsx
-// Your Primary Color
-import teal from '@material-ui/core/colors/teal';
-// Your Secondary Color
-import orange from '@material-ui/core/colors/orange';
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
-
-const theme = createMuiTheme({
-  palette: {
-    primary: blue,
-    secondary: red,
-  },
-});
-
-export default responsiveFontSizes(theme);
-```
-
-### Custom Layout
-
-#### ./src/gatsby-theme-aoi/layout/Drawer/
-
-
-
-<!--
-The [default Gatsby starter](https://github.com/gatsbyjs/gatsby-starter-default) converted to [TypeScript](https://www.typescriptlang.org/).
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-starter-typescript https://github.com/haysclark/gatsby-starter-typescript
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/haysclark/gatsby-starter-typescript)
--->
+[gatsby]: https://www.gatsbyjs.org/ 'Gatsby'
+[gatsby-theme-aoi]: https://github.com/cieloazul310/gatsby-theme-aoi/ 'Gatsby Theme Aoi'
+[gatsby-theme-aoi-top-layout]: https://github.com/cieloazul310/gatsby-theme-aoi-top-layout/ 'Gatsby Theme Aoi Top Layout'
+[gatsby-starter-aoi-theme]: https://github.com/cieloazul310/gatsby-theme-aoi/ 'Gatsby Starter Aoi Theme'
+[gatsby-starter-aoi]: https://github.com/cieloazul310/gatsby-starter-aoi/ 'Gatsby Starter Aoi'
