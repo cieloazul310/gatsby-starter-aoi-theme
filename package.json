@@ -18,7 +18,7 @@
     "gatsby": "^2.22.4",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-graphql-codegen": "^2.7.1",
-    "gatsby-theme-aoi": "1.1.0",
+    "gatsby-theme-aoi": "1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
