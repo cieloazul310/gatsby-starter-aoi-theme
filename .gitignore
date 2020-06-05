@@ -7,3 +7,5 @@ public/
 storybook-static
 .DS_Store
 yarn-error.log
+
+graphql-types.ts
