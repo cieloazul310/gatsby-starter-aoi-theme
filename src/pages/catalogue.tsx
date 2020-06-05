@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import MuiLink from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
+import Divider from '@material-ui/core/Divider';
 import { faCreativeCommons, faReact, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import Layout from 'gatsby-theme-aoi/src/layout';
 import AppLink, { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
@@ -27,6 +28,7 @@ function SecondPage() {
       <Typography variant="subtitle1" gutterBottom>
         Gatsby Theme Aoi layouts, components and hooks.
       </Typography>
+      <Divider />
       <Section>
         <Typography variant="h4" component="h3" gutterBottom>
           Layouts
@@ -37,6 +39,7 @@ function SecondPage() {
           </Typography>
           <Typography paragraph>Gatsby Theme Aoi Basic Layout. Easy to customize.</Typography>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             Tab Page Layout
@@ -44,6 +47,7 @@ function SecondPage() {
           <Typography paragraph>Gatsby Theme Aoi Tab Page Layout</Typography>
           <AppLink to="/tab-page/">Example</AppLink>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             Jumbotron Layout
@@ -51,6 +55,7 @@ function SecondPage() {
           <Typography paragraph>Gatsby Theme Aoi Jumbotron Layout</Typography>
           <AppLink to="/jumbotron/">Example</AppLink>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             Full Width Layout
@@ -59,6 +64,7 @@ function SecondPage() {
           <AppLink to="/without-drawer/">Example</AppLink>
         </Section>
       </Section>
+      <Divider />
       <Section>
         <Typography variant="h4" component="h3" gutterBottom>
           Components
@@ -77,6 +83,7 @@ function SecondPage() {
             </AppLink>
           </AutoMargin>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             AppLinkButton
@@ -96,6 +103,7 @@ function SecondPage() {
             </AppLinkButton>
           </AutoMargin>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             FabIcon
@@ -118,6 +126,7 @@ function SecondPage() {
           </AutoMargin>
         </Section>
       </Section>
+      <Divider />
       <Section>
         <Typography variant="h4" component="h3" gutterBottom>
           Custom Hooks
@@ -128,12 +137,14 @@ function SecondPage() {
           </Typography>
           <Typography paragraph>Easy to use site metadata. Gatsby Static Query</Typography>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             useSocialShare
           </Typography>
           <Typography paragraph>Easy to use Social Share Url for Twitter, Facebook and Line.</Typography>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             useAppState
@@ -141,6 +152,7 @@ function SecondPage() {
           <Typography paragraph>Returns current App State.</Typography>
           <Typography paragraph>Count: {count}</Typography>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             useDispatch
@@ -150,6 +162,7 @@ function SecondPage() {
             Increment
           </Button>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             useThemeContextState
@@ -158,6 +171,7 @@ function SecondPage() {
           <Typography>darkMode: {`${darkMode}`}</Typography>
           <Typography>useSystemTheme: {`${useSystemTheme}`}</Typography>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             useToggleDark
@@ -167,6 +181,7 @@ function SecondPage() {
             Toggle Dark
           </Button>
         </Section>
+        <Divider variant="middle" />
         <Section>
           <Typography variant="h5" component="h4" gutterBottom>
             useToggleUseSystem

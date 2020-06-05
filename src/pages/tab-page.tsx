@@ -9,7 +9,7 @@ import { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
 
 function SecondPage() {
   const [tab, setTab] = React.useState(0);
-  const _handleTab = (event: React.ChangeEvent<{}>, newValue: number) => {
+  const _handleTab = (event: React.ChangeEvent<Record<unknown, string>>, newValue: number) => {
     setTab(newValue);
   };
   const _handleTabIndex = (index: number) => () => {
