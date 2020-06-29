@@ -28,8 +28,11 @@ yarn run develop
 # build
 yarn run build
 
-# format with prettier
-yarn run format
+# serve the production build
+yarn run serve
+
+# lint
+yarn run lint
 ```
 
 ## docs
