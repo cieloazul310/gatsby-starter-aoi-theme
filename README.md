@@ -28,8 +28,14 @@ yarn run develop
 # build
 yarn run build
 
-# format with prettier
-yarn run format
+# serve the production build
+yarn run serve
+
+# lint
+yarn run lint
+
+# test
+yarn run test
 ```
 
 ## docs
@@ -38,8 +44,9 @@ See [gatsby-theme-aoi] repository.
 
 ## Related Repositories
 
-- [gatsby-theme-aoi] A Gatsby Aoi Theme
+- [gatsby-theme-aoi] Gatsby Aoi Theme
 - [gatsby-theme-aoi-top-layout] A plugin for Gatsby Aoi Theme
+- [gatsby-starter-aoi-blog] Gatsby Aoi Blog Starter
 - [gatsby-starter-aoi] A Gatsby starter kit (deprecated)
 
 [gatsby]: https://www.gatsbyjs.org/ 'Gatsby'
@@ -47,3 +54,4 @@ See [gatsby-theme-aoi] repository.
 [gatsby-theme-aoi-top-layout]: https://github.com/cieloazul310/gatsby-theme-aoi-top-layout/ 'Gatsby Theme Aoi Top Layout'
 [gatsby-starter-aoi-theme]: https://github.com/cieloazul310/gatsby-theme-aoi/ 'Gatsby Starter Aoi Theme'
 [gatsby-starter-aoi]: https://github.com/cieloazul310/gatsby-starter-aoi/ 'Gatsby Starter Aoi'
+[gatsby-starter-aoi-blog]: https://github.com/cieloazul310/gatsby-starter-aoi-blog/ 'Gatsby Starter Aoi Blog'
