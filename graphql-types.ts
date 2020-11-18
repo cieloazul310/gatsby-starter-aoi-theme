@@ -1,5 +1,5 @@
 export type Maybe<T> = T | null;
-export type Exact<T extends { [key: string]: any }> = { [K in keyof T]: T[K] };
+export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: string;
@@ -712,10 +712,10 @@ export type Query = {
   allFile: FileConnection;
   directory?: Maybe<Directory>;
   allDirectory: DirectoryConnection;
-  sitePage?: Maybe<SitePage>;
-  allSitePage: SitePageConnection;
   site?: Maybe<Site>;
   allSite: SiteConnection;
+  sitePage?: Maybe<SitePage>;
+  allSitePage: SitePageConnection;
   siteBuildMetadata?: Maybe<SiteBuildMetadata>;
   allSiteBuildMetadata: SiteBuildMetadataConnection;
   sitePlugin?: Maybe<SitePlugin>;
@@ -817,6 +817,26 @@ export type QueryAllDirectoryArgs = {
 };
 
 
+export type QuerySiteArgs = {
+  buildTime?: Maybe<DateQueryOperatorInput>;
+  siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
+  pathPrefix?: Maybe<StringQueryOperatorInput>;
+  polyfill?: Maybe<BooleanQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+};
+
+
+export type QueryAllSiteArgs = {
+  filter?: Maybe<SiteFilterInput>;
+  sort?: Maybe<SiteSortInput>;
+  skip?: Maybe<Scalars['Int']>;
+  limit?: Maybe<Scalars['Int']>;
+};
+
+
 export type QuerySitePageArgs = {
   path?: Maybe<StringQueryOperatorInput>;
   component?: Maybe<StringQueryOperatorInput>;
@@ -837,26 +857,6 @@ export type QuerySitePageArgs = {
 export type QueryAllSitePageArgs = {
   filter?: Maybe<SitePageFilterInput>;
   sort?: Maybe<SitePageSortInput>;
-  skip?: Maybe<Scalars['Int']>;
-  limit?: Maybe<Scalars['Int']>;
-};
-
-
-export type QuerySiteArgs = {
-  buildTime?: Maybe<DateQueryOperatorInput>;
-  siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  pathPrefix?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
-};
-
-
-export type QueryAllSiteArgs = {
-  filter?: Maybe<SiteFilterInput>;
-  sort?: Maybe<SiteSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
@@ -1409,11 +1409,13 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___resolve'
   | 'pluginCreator___name'
   | 'pluginCreator___version'
-  | 'pluginCreator___pluginOptions___fonts'
-  | 'pluginCreator___pluginOptions___fonts___family'
+  | 'pluginCreator___pluginOptions___fonts___google'
   | 'pluginCreator___pluginOptions___siteId'
   | 'pluginCreator___pluginOptions___path'
   | 'pluginCreator___pluginOptions___pathCheck'
+  | 'pluginCreator___pluginOptions___allExtensions'
+  | 'pluginCreator___pluginOptions___isTSX'
+  | 'pluginCreator___pluginOptions___jsxPragma'
   | 'pluginCreator___nodeAPIs'
   | 'pluginCreator___browserAPIs'
   | 'pluginCreator___ssrAPIs'
@@ -1600,11 +1602,15 @@ export type SitePluginFieldsEnum =
   | 'resolve'
   | 'name'
   | 'version'
-  | 'pluginOptions___fonts'
-  | 'pluginOptions___fonts___family'
+  | 'pluginOptions___fonts___google'
+  | 'pluginOptions___fonts___google___family'
+  | 'pluginOptions___fonts___google___variants'
   | 'pluginOptions___siteId'
   | 'pluginOptions___path'
   | 'pluginOptions___pathCheck'
+  | 'pluginOptions___allExtensions'
+  | 'pluginOptions___isTSX'
+  | 'pluginOptions___jsxPragma'
   | 'nodeAPIs'
   | 'browserAPIs'
   | 'ssrAPIs'
@@ -1720,29 +1726,45 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
-  fonts?: Maybe<Array<Maybe<SitePluginPluginOptionsFonts>>>;
+  fonts?: Maybe<SitePluginPluginOptionsFonts>;
   siteId?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
+  allExtensions?: Maybe<Scalars['Boolean']>;
+  isTSX?: Maybe<Scalars['Boolean']>;
+  jsxPragma?: Maybe<Scalars['String']>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
-  fonts?: Maybe<SitePluginPluginOptionsFontsFilterListInput>;
+  fonts?: Maybe<SitePluginPluginOptionsFontsFilterInput>;
   siteId?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
+  allExtensions?: Maybe<BooleanQueryOperatorInput>;
+  isTSX?: Maybe<BooleanQueryOperatorInput>;
+  jsxPragma?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsFonts = {
-  family?: Maybe<Scalars['String']>;
+  google?: Maybe<Array<Maybe<SitePluginPluginOptionsFontsGoogle>>>;
 };
 
 export type SitePluginPluginOptionsFontsFilterInput = {
-  family?: Maybe<StringQueryOperatorInput>;
+  google?: Maybe<SitePluginPluginOptionsFontsGoogleFilterListInput>;
 };
 
-export type SitePluginPluginOptionsFontsFilterListInput = {
-  elemMatch?: Maybe<SitePluginPluginOptionsFontsFilterInput>;
+export type SitePluginPluginOptionsFontsGoogle = {
+  family?: Maybe<Scalars['String']>;
+  variants?: Maybe<Array<Maybe<Scalars['String']>>>;
+};
+
+export type SitePluginPluginOptionsFontsGoogleFilterInput = {
+  family?: Maybe<StringQueryOperatorInput>;
+  variants?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsFontsGoogleFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsFontsGoogleFilterInput>;
 };
 
 export type SitePluginSortInput = {
@@ -1817,4 +1839,3 @@ export type StringQueryOperatorInput = {
   regex?: Maybe<Scalars['String']>;
   glob?: Maybe<Scalars['String']>;
 };
-
