@@ -4,6 +4,7 @@ module.exports = {
     description: 'A GatsbyJS starter using Gatsby Aoi Theme based on Material Design written with TypeScript.',
     lang: '',
     siteUrl: 'https://cieloazul310.github.io/gatsby-starter-aoi-theme',
+    baseUrl: 'https://cieloazul310.github.io',
     author: 'cieloazul310',
     keywords: ['Gatsby', 'TypeScript', 'Material-UI'],
     social: {
@@ -34,7 +35,6 @@ module.exports = {
       options: {
         stages: ['develop'],
         extensions: ['js', 'jsx', 'ts', 'tsx'],
-        exclude: ['node_modules', '.cache', 'public'],
         // Any eslint-webpack-plugin options below
       },
     },
