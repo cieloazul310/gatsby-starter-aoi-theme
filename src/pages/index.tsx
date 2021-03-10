@@ -3,14 +3,15 @@ import Typography from '@material-ui/core/Typography';
 import Jumbotron from 'gatsby-theme-aoi/src/components/Jumbotron';
 import AppLink, { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
 import Section, { SectionDivider } from 'gatsby-theme-aoi/src/components/Section';
-import Article, { ArticleSection, H3, H4 } from 'gatsby-theme-aoi/src/components/Article';
+import Article, { ArticleSection, H3 } from 'gatsby-theme-aoi/src/components/Article';
 import Layout from 'gatsby-theme-aoi/src/layout';
 import { useAppState } from 'gatsby-theme-aoi-top-layout/src/utils/AppStateContext';
 
 function IndexPage() {
   const { count } = useAppState();
   return (
-    <Layout jumbotron={<Jumbotron title="Gatsby Theme Aoi" />}>
+    <Layout>
+      <Jumbotron title="Gatsby Theme Aoi" />
       <SectionDivider />
       <Section>
         <Article>
