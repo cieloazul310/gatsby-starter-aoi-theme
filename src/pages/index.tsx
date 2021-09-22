@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import Jumbotron from 'gatsby-theme-aoi/src/components/Jumbotron';
 import AppLink, { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
 import Section, { SectionDivider } from 'gatsby-theme-aoi/src/components/Section';

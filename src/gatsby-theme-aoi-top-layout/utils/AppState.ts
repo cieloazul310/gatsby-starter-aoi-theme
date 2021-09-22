@@ -35,6 +35,6 @@ export default function reducer(state: AppState, action: Action): AppState {
         count: 0,
       };
     default:
-      throw new Error();
+      throw new Error('Invalid action type.');
   }
 }

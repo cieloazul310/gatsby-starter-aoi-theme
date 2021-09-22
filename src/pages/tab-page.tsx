@@ -1,7 +1,13 @@
 import * as React from 'react';
+/*
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Button from '@material-ui/core/Button';
+*/
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Button from '@mui/material/Button';
+
 import Layout from 'gatsby-theme-aoi/src/layout';
 import Jumbotron from 'gatsby-theme-aoi/src/components/Jumbotron';
 import TabPane from 'gatsby-theme-aoi/src/layout/TabPane';
@@ -11,7 +17,7 @@ import { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
 
 function SecondPage() {
   const [tab, setTab] = React.useState(0);
-  const handleTab = (event: React.ChangeEvent<Record<string, never>>, newValue: number) => {
+  const handleTab = (event: React.SyntheticEvent, newValue: number) => {
     setTab(newValue);
   };
   const handleTabIndex = (index: number) => () => {

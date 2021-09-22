@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { withPrefix } from 'gatsby';
+/*
 import List from '@material-ui/core/List';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -8,6 +9,16 @@ import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import ListIcon from '@material-ui/icons/List';
 import SportsHandballIcon from '@material-ui/icons/SportsHandball';
+*/
+import List from '@mui/material/List';
+import ListSubheader from '@mui/material/ListSubheader';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+// icons
+import HomeIcon from '@mui/icons-material/Home';
+import ListIcon from '@mui/icons-material/List';
+import SportsHandballIcon from '@mui/icons-material/SportsHandball';
+
 import ListItemAppLink from 'gatsby-theme-aoi/src/components/ListItemAppLink';
 import { useLocation } from '@reach/router';
 

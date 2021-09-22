@@ -7,7 +7,7 @@ const AppStateContext = React.createContext<{
 }>({
   state: initialAppState,
   dispatch: () => {
-    throw new Error();
+    throw new Error('Uncaught AppState context value.');
   },
 });
 

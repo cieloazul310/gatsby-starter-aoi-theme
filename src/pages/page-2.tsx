@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import Layout from 'gatsby-theme-aoi/src/layout';
 import { AppLinkButton } from 'gatsby-theme-aoi/src/components/AppLink';
 

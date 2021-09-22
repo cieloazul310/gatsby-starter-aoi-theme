@@ -3,7 +3,7 @@ module.exports = {
     __PATH_PREFIX__: true,
   },
   parser: `@typescript-eslint/parser`,
-  extends: ['react-app', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'prettier/@typescript-eslint'],
+  extends: ['react-app', 'plugin:@typescript-eslint/recommended', 'prettier'],
   plugins: ['@typescript-eslint', 'prettier'],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
